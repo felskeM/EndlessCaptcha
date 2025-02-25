@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crypto Captcha Transfer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Home Screen: Currency Selection -->
+  <div id="home-screen" class="screen active">
+    <header>
+      <h1>Crypto Captcha Transfer</h1>
+      <p>Exchange your funds safely through our endless captcha maze!</p>
+    </header>
+    <main>
+      <div class="currency-selector">
+        <button class="currency-btn" data-currency="USD">USD</button>
+        <button class="currency-btn" data-currency="ETH">ETH</button>
+        <button class="currency-btn" data-currency="XMR">XMR</button>
+        <button class="currency-btn" data-currency="BTC">BTC</button>
+        <button class="currency-btn" data-currency="LTC">LTC</button>
+        <button class="currency-btn" data-currency="SOL">SOL</button>
+      </div>
+      <button id="transfer-button">Initiate Transfer</button>
+    </main>
+    <footer>
+      <p>&copy; 2025 Crypto Captcha Transfer</p>
+    </footer>
+  </div>
+
+  <!-- Captcha Screen: Endless Challenge -->
+  <div id="captcha-screen" class="screen">
+    <header>
+      <h1>Captcha Challenge</h1>
+      <p>Prove you're not a bot... again.</p>
+    </header>
+    <main>
+      <div id="captcha-container">
+         <p>Solve this captcha to proceed:</p>
+         <img src="https://via.placeholder.com/150x50?text=Captcha" alt="Captcha Image">
+         <input type="text" id="captcha-input" placeholder="Enter captcha text">
+         <button id="submit-captcha">Submit</button>
+         <div id="captcha-message"></div>
+      </div>
+      <!-- Hidden secret room button (easter egg) -->
+      <button id="secret-room-button" class="secret-btn">Enter Secret Room</button>
+    </main>
+    <footer>
+      <p>&copy; 2025 Crypto Captcha Transfer</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
